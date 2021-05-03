@@ -5,7 +5,7 @@
     {% for user in users %}
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
-                <a href="{{ url_for('user', id=user.id) }}">
+                <a href="{{ url_for('user.unique', id=user.id) }}">
                     {{ user.name }}
                 </a>
             </li>
